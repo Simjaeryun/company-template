@@ -1,4 +1,9 @@
-import { Card, CardHeader, CardTitle, CardDescription } from "@repo/ui/components";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "@repo/ui/components";
 import type { Book } from "../../_dummy/books";
 
 interface BookCardProps {
@@ -31,4 +36,3 @@ export function BookCard({ book }: BookCardProps) {
     </Card>
   );
 }
-

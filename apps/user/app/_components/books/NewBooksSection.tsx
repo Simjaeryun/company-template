@@ -15,9 +15,7 @@ export function NewBooksSection() {
             </p>
           </div>
           <Link href="/books">
-            <Button variant="ghost">
-              전체보기 →
-            </Button>
+            <Button variant="ghost">전체보기 →</Button>
           </Link>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -29,4 +27,3 @@ export function NewBooksSection() {
     </section>
   );
 }
-

@@ -10,7 +10,9 @@ export function MagazineSection() {
           <div className="relative h-64 sm:h-96 lg:h-[500px] bg-linear-to-br from-primary/10 to-accent/10 rounded-2xl flex items-center justify-center shadow-xl">
             <div className="text-center space-y-4">
               <div className="text-6xl">📚</div>
-              <p className="text-muted-foreground font-medium">{currentMagazine.title}</p>
+              <p className="text-muted-foreground font-medium">
+                {currentMagazine.title}
+              </p>
             </div>
           </div>
           <div className="space-y-6">
@@ -28,8 +30,12 @@ export function MagazineSection() {
             <div className="grid grid-cols-2 gap-6 pt-4">
               {currentMagazine.awards.map((award, index) => (
                 <div key={index}>
-                  <div className="text-3xl font-bold text-primary">{award.edition}</div>
-                  <div className="text-sm text-muted-foreground">{award.name}</div>
+                  <div className="text-3xl font-bold text-primary">
+                    {award.edition}
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    {award.name}
+                  </div>
                 </div>
               ))}
             </div>
@@ -44,4 +50,3 @@ export function MagazineSection() {
     </section>
   );
 }
-

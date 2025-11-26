@@ -1,4 +1,10 @@
-import { Button, Card, CardHeader, CardTitle, CardDescription } from "@repo/ui/components";
+import {
+  Button,
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "@repo/ui/components";
 import { currentMagazine } from "../../_dummy/magazine";
 
 export default function MagazinePage() {
@@ -18,7 +24,9 @@ export default function MagazinePage() {
             <div className="relative h-96 lg:h-[600px] bg-linear-to-br from-primary/10 to-accent/10 rounded-2xl flex items-center justify-center shadow-xl">
               <div className="text-center space-y-4">
                 <div className="text-6xl">📚</div>
-                <p className="text-muted-foreground font-medium">{currentMagazine.title}</p>
+                <p className="text-muted-foreground font-medium">
+                  {currentMagazine.title}
+                </p>
               </div>
             </div>
             <div className="space-y-6">
@@ -36,17 +44,25 @@ export default function MagazinePage() {
               <div className="grid grid-cols-2 gap-6 pt-4">
                 {currentMagazine.awards.map((award, index) => (
                   <div key={index} className="p-4 bg-muted/30 rounded-lg">
-                    <div className="text-3xl font-bold text-primary">{award.edition}</div>
-                    <div className="text-sm text-muted-foreground mt-1">{award.name}</div>
+                    <div className="text-3xl font-bold text-primary">
+                      {award.edition}
+                    </div>
+                    <div className="text-sm text-muted-foreground mt-1">
+                      {award.name}
+                    </div>
                     {award.winner && (
-                      <div className="text-sm font-medium mt-2">{award.winner}</div>
+                      <div className="text-sm font-medium mt-2">
+                        {award.winner}
+                      </div>
                     )}
                   </div>
                 ))}
               </div>
               <div className="pt-4 flex gap-4">
                 <Button size="lg">구매하기</Button>
-                <Button size="lg" variant="outline">상세 정보</Button>
+                <Button size="lg" variant="outline">
+                  상세 정보
+                </Button>
               </div>
             </div>
           </div>
@@ -57,10 +73,10 @@ export default function MagazinePage() {
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <h2 className="text-3xl font-bold">반연간 문학수첩이란?</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              반연간 문학수첩은 1년에 두 번 발행되는 문예지로, 한국 문학의 발전과 
-              신인 작가 발굴을 위해 창간되었습니다. 매호마다 엄선된 작품들과 함께 
-              김종철문학상, 김종철시학상 수상작을 소개하며, 독자와 작가가 함께 
-              만들어가는 문학의 가치를 지향합니다.
+              반연간 문학수첩은 1년에 두 번 발행되는 문예지로, 한국 문학의
+              발전과 신인 작가 발굴을 위해 창간되었습니다. 매호마다 엄선된
+              작품들과 함께 김종철문학상, 김종철시학상 수상작을 소개하며, 독자와
+              작가가 함께 만들어가는 문학의 가치를 지향합니다.
             </p>
           </div>
         </section>
@@ -70,17 +86,24 @@ export default function MagazinePage() {
           <div className="flex justify-between items-end mb-8">
             <div>
               <h2 className="text-3xl font-bold">이전 호</h2>
-              <p className="text-muted-foreground mt-2">지난 문학수첩을 만나보세요</p>
+              <p className="text-muted-foreground mt-2">
+                지난 문학수첩을 만나보세요
+              </p>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {previousIssues.map((issue, index) => (
-              <Card key={index} className="group cursor-pointer hover:shadow-lg transition-all">
+              <Card
+                key={index}
+                className="group cursor-pointer hover:shadow-lg transition-all"
+              >
                 <CardHeader className="p-0">
                   <div className="aspect-3/4 bg-linear-to-br from-primary/5 to-accent/5 rounded-t-xl flex items-center justify-center">
                     <div className="text-center p-6">
                       <div className="text-4xl mb-2">📖</div>
-                      <p className="text-xs text-muted-foreground">표지 이미지</p>
+                      <p className="text-xs text-muted-foreground">
+                        표지 이미지
+                      </p>
                     </div>
                   </div>
                   <div className="p-4 space-y-2">
@@ -109,4 +132,3 @@ export default function MagazinePage() {
     </div>
   );
 }
-

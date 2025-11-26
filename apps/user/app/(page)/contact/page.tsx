@@ -1,6 +1,12 @@
 "use client";
 
-import { Button, Card, CardHeader, CardTitle, CardContent } from "@repo/ui/components";
+import {
+  Button,
+  Card,
+  CardHeader,
+  CardTitle,
+  CardContent,
+} from "@repo/ui/components";
 import { companyInfo } from "../../_dummy/company";
 import { useState } from "react";
 
@@ -49,7 +55,9 @@ export default function ContactPage() {
                         id="name"
                         type="text"
                         value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                        onChange={(e) =>
+                          setFormData({ ...formData, name: e.target.value })
+                        }
                         className="w-full px-3 py-2 border rounded-md bg-background"
                         required
                       />
@@ -62,7 +70,9 @@ export default function ContactPage() {
                         id="email"
                         type="email"
                         value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        onChange={(e) =>
+                          setFormData({ ...formData, email: e.target.value })
+                        }
                         className="w-full px-3 py-2 border rounded-md bg-background"
                         required
                       />
@@ -76,7 +86,9 @@ export default function ContactPage() {
                       id="phone"
                       type="tel"
                       value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, phone: e.target.value })
+                      }
                       className="w-full px-3 py-2 border rounded-md bg-background"
                     />
                   </div>
@@ -87,7 +99,9 @@ export default function ContactPage() {
                     <select
                       id="category"
                       value={formData.category}
-                      onChange={(e) => setFormData({ ...formData, category: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, category: e.target.value })
+                      }
                       className="w-full px-3 py-2 border rounded-md bg-background"
                       required
                     >
@@ -105,7 +119,9 @@ export default function ContactPage() {
                     <textarea
                       id="message"
                       value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, message: e.target.value })
+                      }
                       className="w-full px-3 py-2 border rounded-md bg-background min-h-[200px]"
                       required
                     />
@@ -126,18 +142,45 @@ export default function ContactPage() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <svg className="w-5 h-5 mt-0.5 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <svg
+                    className="w-5 h-5 mt-0.5 text-primary shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
                   </svg>
                   <div>
                     <div className="font-medium mb-1">주소</div>
-                    <div className="text-sm text-muted-foreground">{companyInfo.address}</div>
+                    <div className="text-sm text-muted-foreground">
+                      {companyInfo.address}
+                    </div>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <svg className="w-5 h-5 mt-0.5 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  <svg
+                    className="w-5 h-5 mt-0.5 text-primary shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
                   </svg>
                   <div>
                     <div className="font-medium mb-1">전화</div>
@@ -151,17 +194,39 @@ export default function ContactPage() {
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <svg className="w-5 h-5 mt-0.5 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  <svg
+                    className="w-5 h-5 mt-0.5 text-primary shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
                   </svg>
                   <div>
                     <div className="font-medium mb-1">이메일</div>
-                    <div className="text-sm text-muted-foreground">{companyInfo.email}</div>
+                    <div className="text-sm text-muted-foreground">
+                      {companyInfo.email}
+                    </div>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <svg className="w-5 h-5 mt-0.5 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <svg
+                    className="w-5 h-5 mt-0.5 text-primary shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
                   </svg>
                   <div>
                     <div className="font-medium mb-1">운영 시간</div>
@@ -199,8 +264,18 @@ export default function ContactPage() {
           <h2 className="text-2xl font-bold mb-6">오시는 길</h2>
           <div className="aspect-video bg-muted rounded-xl flex items-center justify-center">
             <div className="text-center text-muted-foreground">
-              <svg className="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+              <svg
+                className="w-16 h-16 mx-auto mb-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+                />
               </svg>
               <p>지도 API 연동 영역</p>
             </div>
@@ -210,4 +285,3 @@ export default function ContactPage() {
     </div>
   );
 }
-

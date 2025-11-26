@@ -1,4 +1,10 @@
-import { Button, Card, CardHeader, CardTitle, CardDescription } from "@repo/ui/components";
+import {
+  Button,
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "@repo/ui/components";
 import { newsItems } from "../../_dummy/news";
 import Link from "next/link";
 
@@ -14,24 +20,21 @@ export function NewsSection() {
             </p>
           </div>
           <Link href="/news">
-            <Button variant="ghost">
-              전체보기 →
-            </Button>
+            <Button variant="ghost">전체보기 →</Button>
           </Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {newsItems.map((item, index) => (
-            <Card key={index} className="hover:shadow-lg transition-all cursor-pointer">
+            <Card
+              key={index}
+              className="hover:shadow-lg transition-all cursor-pointer"
+            >
               <CardHeader>
                 <div className="text-xs text-muted-foreground mb-2">
                   {item.category} · {item.date}
                 </div>
-                <CardTitle className="text-lg">
-                  {item.title}
-                </CardTitle>
-                <CardDescription>
-                  {item.description}
-                </CardDescription>
+                <CardTitle className="text-lg">{item.title}</CardTitle>
+                <CardDescription>{item.description}</CardDescription>
               </CardHeader>
             </Card>
           ))}
@@ -40,4 +43,3 @@ export function NewsSection() {
     </section>
   );
 }
-

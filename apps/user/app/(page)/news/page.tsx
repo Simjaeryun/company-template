@@ -1,4 +1,10 @@
-import { Card, CardHeader, CardTitle, CardDescription, Button } from "@repo/ui/components";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  Button,
+} from "@repo/ui/components";
 import { newsItems } from "../../_dummy/news";
 
 export default function NewsPage() {
@@ -18,16 +24,27 @@ export default function NewsPage() {
         {/* Categories */}
         <div className="flex flex-wrap gap-3 mb-8">
           <Button size="sm">전체</Button>
-          <Button variant="outline" size="sm">공지사항</Button>
-          <Button variant="outline" size="sm">새소식</Button>
-          <Button variant="outline" size="sm">공모</Button>
-          <Button variant="outline" size="sm">이벤트</Button>
+          <Button variant="outline" size="sm">
+            공지사항
+          </Button>
+          <Button variant="outline" size="sm">
+            새소식
+          </Button>
+          <Button variant="outline" size="sm">
+            공모
+          </Button>
+          <Button variant="outline" size="sm">
+            이벤트
+          </Button>
         </div>
 
         {/* News List */}
         <div className="space-y-6">
           {allNews.map((item, index) => (
-            <Card key={index} className="hover:shadow-lg transition-all cursor-pointer">
+            <Card
+              key={index}
+              className="hover:shadow-lg transition-all cursor-pointer"
+            >
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-xs text-muted-foreground">
@@ -37,9 +54,7 @@ export default function NewsPage() {
                     NEW
                   </span>
                 </div>
-                <CardTitle className="text-xl mb-2">
-                  {item.title}
-                </CardTitle>
+                <CardTitle className="text-xl mb-2">{item.title}</CardTitle>
                 <CardDescription className="text-base">
                   {item.description}
                 </CardDescription>
@@ -55,14 +70,21 @@ export default function NewsPage() {
 
         {/* Pagination */}
         <div className="mt-12 flex justify-center gap-2">
-          <Button variant="outline" size="sm" disabled>이전</Button>
-          <Button variant="outline" size="sm">1</Button>
+          <Button variant="outline" size="sm" disabled>
+            이전
+          </Button>
+          <Button variant="outline" size="sm">
+            1
+          </Button>
           <Button size="sm">2</Button>
-          <Button variant="outline" size="sm">3</Button>
-          <Button variant="outline" size="sm">다음</Button>
+          <Button variant="outline" size="sm">
+            3
+          </Button>
+          <Button variant="outline" size="sm">
+            다음
+          </Button>
         </div>
       </div>
     </div>
   );
 }
-

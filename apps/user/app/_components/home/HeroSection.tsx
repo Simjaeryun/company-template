@@ -4,7 +4,10 @@ import Link from "next/link";
 
 export function HeroSection() {
   return (
-    <section id="home" className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-muted/30 to-background">
+    <section
+      id="home"
+      className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-linear-to-b from-muted/30 to-background"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
@@ -27,7 +30,9 @@ export function HeroSection() {
                 <Button size="lg">자세히 보기</Button>
               </Link>
               <Link href="/books">
-                <Button size="lg" variant="outline">전체 도서 보기</Button>
+                <Button size="lg" variant="outline">
+                  전체 도서 보기
+                </Button>
               </Link>
             </div>
           </div>
@@ -44,4 +49,3 @@ export function HeroSection() {
     </section>
   );
 }
-

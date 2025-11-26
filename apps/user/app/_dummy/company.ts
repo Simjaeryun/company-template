@@ -15,7 +15,7 @@ export const companyInfo: CompanyInfo = {
   address: "경기도 파주시 회동길 503-1",
   phone: "031-955-9088",
   fax: "031-955-9066",
-  email: "moonhak@moonhak.co.kr"
+  email: "moonhak@moonhak.co.kr",
 };
 
 export interface NavItem {
@@ -28,7 +28,7 @@ export const navItems: NavItem[] = [
   { name: "새로 나온 책", href: "/#new" },
   { name: "반연간 문학수첩", href: "/magazine" },
   { name: "소식", href: "/news" },
-  { name: "문의", href: "/contact" }
+  { name: "문의", href: "/contact" },
 ];
 
 export interface FooterLink {
@@ -47,8 +47,8 @@ export const footerLinks: FooterLink[] = [
       { name: "새로 나온 책", href: "#" },
       { name: "수상 및 선정 도서", href: "#" },
       { name: "작가", href: "#" },
-      { name: "해리포터 시리즈", href: "#" }
-    ]
+      { name: "해리포터 시리즈", href: "#" },
+    ],
   },
   {
     title: "문학수첩",
@@ -57,8 +57,7 @@ export const footerLinks: FooterLink[] = [
       { name: "김종철 시인의 집", href: "#" },
       { name: "회사 소개", href: "#" },
       { name: "연혁", href: "#" },
-      { name: "공지사항", href: "#" }
-    ]
-  }
+      { name: "공지사항", href: "#" },
+    ],
+  },
 ];
-
