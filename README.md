@@ -37,6 +37,7 @@ company-template/
 ## 🛠️ 개발 시작하기
 
 ### 1. 의존성 설치
+
 ```bash
 pnpm install
 ```
@@ -44,11 +45,13 @@ pnpm install
 ### 2. 개발 서버 실행
 
 #### 모든 앱 동시 실행
+
 ```bash
 pnpm dev
 ```
 
 #### 개별 앱 실행
+
 ```bash
 # 관리자 앱만 실행 (http://localhost:3000)
 pnpm --filter admin dev
@@ -58,6 +61,7 @@ pnpm --filter user dev
 ```
 
 ### 3. 빌드
+
 ```bash
 # 모든 앱 빌드
 pnpm build
@@ -68,6 +72,7 @@ pnpm --filter user build
 ```
 
 ### 4. 린트
+
 ```bash
 pnpm lint
 ```
@@ -84,12 +89,14 @@ pnpm lint
 ## 📝 개발 가이드
 
 ### 새로운 앱 추가
+
 ```bash
 cd apps/
 pnpm create next-app@latest new-app --typescript --tailwind --eslint --app --src-dir
 ```
 
 ### 공통 UI 컴포넌트 사용
+
 ```typescript
 // UI 컴포넌트 import
 import { Button, Card, CardContent, CardHeader, CardTitle } from '@repo/ui/components'
@@ -112,6 +119,7 @@ export default function MyPage() {
 ```
 
 ### 새로운 UI 컴포넌트 추가
+
 ```bash
 # UI 패키지 디렉토리로 이동
 cd packages/ui
@@ -124,17 +132,18 @@ pnpm dlx shadcn@canary add dialog input label
 
 ## 🔧 스크립트
 
-| 명령어 | 설명 |
-|--------|------|
-| `pnpm dev` | 모든 앱 개발 서버 실행 |
-| `pnpm build` | 모든 앱 빌드 |
-| `pnpm lint` | 모든 앱 린트 검사 |
-| `pnpm format` | 코드 포맷팅 |
-| `pnpm check-types` | TypeScript 타입 검사 |
+| 명령어             | 설명                   |
+| ------------------ | ---------------------- |
+| `pnpm dev`         | 모든 앱 개발 서버 실행 |
+| `pnpm build`       | 모든 앱 빌드           |
+| `pnpm lint`        | 모든 앱 린트 검사      |
+| `pnpm format`      | 코드 포맷팅            |
+| `pnpm check-types` | TypeScript 타입 검사   |
 
 ## 🎨 사용 가능한 UI 컴포넌트
 
 현재 설치된 컴포넌트들:
+
 - `Button` - 다양한 variant (default, secondary, outline, destructive, ghost)
 - `Card`, `CardHeader`, `CardTitle`, `CardDescription`, `CardContent`, `CardFooter`
 - `cn` - 클래스명 유틸리티 함수
