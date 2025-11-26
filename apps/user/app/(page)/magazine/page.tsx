@@ -71,11 +71,11 @@ export default function MagazinePage() {
         {/* About Magazine */}
         <section className="mb-20 py-16 px-8 bg-muted/30 rounded-2xl">
           <div className="max-w-3xl mx-auto text-center space-y-6">
-            <h2 className="text-3xl font-bold">반연간 문학수첩이란?</h2>
+            <h2 className="text-3xl font-bold">반연간 책책책책이란?</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              반연간 문학수첩은 1년에 두 번 발행되는 문예지로, 한국 문학의
+              반연간 책책책책은 1년에 두 번 발행되는 문예지로, 한국 문학의
               발전과 신인 작가 발굴을 위해 창간되었습니다. 매호마다 엄선된
-              작품들과 함께 김종철문학상, 김종철시학상 수상작을 소개하며, 독자와
+              작품들과 함께 심푸푸문학상, 심푸푸시학상 수상작을 소개하며, 독자와
               작가가 함께 만들어가는 문학의 가치를 지향합니다.
             </p>
           </div>
@@ -87,7 +87,7 @@ export default function MagazinePage() {
             <div>
               <h2 className="text-3xl font-bold">이전 호</h2>
               <p className="text-muted-foreground mt-2">
-                지난 문학수첩을 만나보세요
+                지난 책책책책을 만나보세요
               </p>
             </div>
           </div>
@@ -122,7 +122,7 @@ export default function MagazinePage() {
         <section className="mt-20 py-16 px-8 bg-primary text-primary-foreground rounded-2xl text-center">
           <h2 className="text-3xl font-bold mb-4">구독 안내</h2>
           <p className="text-lg opacity-90 mb-8">
-            반연간 문학수첩을 정기 구독하고 특별한 혜택을 받아보세요
+            반연간 책책책책을 정기 구독하고 특별한 혜택을 받아보세요
           </p>
           <Button size="lg" variant="secondary">
             구독 신청하기

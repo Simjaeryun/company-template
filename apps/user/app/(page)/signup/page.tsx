@@ -34,11 +34,11 @@ export default function SignupPage() {
                 文
               </span>
             </div>
-            <span className="text-2xl font-bold">문학수첩</span>
+            <span className="text-2xl font-bold">책책책책</span>
           </Link>
           <h1 className="text-3xl font-bold mt-6">회원가입</h1>
           <p className="text-muted-foreground mt-2">
-            문학수첩과 함께 시작하세요
+            책책책책과 함께 시작하세요
           </p>
         </div>
 

@@ -9,7 +9,7 @@ export interface CompanyInfo {
 }
 
 export const companyInfo: CompanyInfo = {
-  name: "문학수첩",
+  name: "책책책책",
   nameEn: "Moonhak Soochup",
   description: "독자와 작가가 함께 만들어가는 문학의 가치를 지키는 출판사",
   address: "경기도 파주시 회동길 503-1",
@@ -26,7 +26,7 @@ export interface NavItem {
 export const navItems: NavItem[] = [
   { name: "도서", href: "/books" },
   { name: "새로 나온 책", href: "/#new" },
-  { name: "반연간 문학수첩", href: "/magazine" },
+  { name: "반연간 책책책책", href: "/magazine" },
   { name: "소식", href: "/news" },
   { name: "문의", href: "/contact" },
 ];
@@ -51,10 +51,10 @@ export const footerLinks: FooterLink[] = [
     ],
   },
   {
-    title: "문학수첩",
+    title: "책책책책",
     links: [
-      { name: "반연간 문학수첩", href: "#" },
-      { name: "김종철 시인의 집", href: "#" },
+      { name: "반연간 책책책책", href: "#" },
+      { name: "심푸푸 시인의 집", href: "#" },
       { name: "회사 소개", href: "#" },
       { name: "연혁", href: "#" },
       { name: "공지사항", href: "#" },

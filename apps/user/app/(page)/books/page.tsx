@@ -10,7 +10,7 @@ export default function BooksPage() {
         <div className="mb-12">
           <h1 className="text-4xl font-bold mb-4">전체 도서</h1>
           <p className="text-lg text-muted-foreground">
-            문학수첩의 모든 도서를 만나보세요
+            책책책책의 모든 도서를 만나보세요
           </p>
         </div>
 
@@ -38,7 +38,7 @@ export default function BooksPage() {
         <div className="flex flex-wrap gap-4 mb-8">
           <select className="px-4 py-2 border rounded-md bg-background">
             <option>전체 카테고리</option>
-            <option>문학수첩</option>
+            <option>책책책책</option>
             <option>북@북스</option>
             <option>리틀북</option>
           </select>

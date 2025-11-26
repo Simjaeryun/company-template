@@ -16,7 +16,7 @@ export function NewsSection() {
           <div className="space-y-2">
             <h2 className="text-3xl sm:text-4xl font-bold">소식</h2>
             <p className="text-lg text-muted-foreground">
-              문학수첩의 최신 소식을 확인하세요
+              책책책책의 최신 소식을 확인하세요
             </p>
           </div>
           <Link href="/news">

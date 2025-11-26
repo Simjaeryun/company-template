@@ -14,14 +14,14 @@ export const newBooks: Book[] = [
     translator: "공보경",
     date: "2025년 11월 27일",
     pages: "472쪽",
-    brand: "문학수첩",
+    brand: "책책책책",
   },
   {
     title: "아벨의 아이들",
     author: "변윤하",
     date: "2025년 11월 6일",
     pages: "384쪽",
-    brand: "문학수첩",
+    brand: "책책책책",
   },
   {
     title: "북 오브 도어즈",
@@ -29,14 +29,14 @@ export const newBooks: Book[] = [
     translator: "심연희",
     date: "2025년 10월 31일",
     pages: "592쪽",
-    brand: "문학수첩",
+    brand: "책책책책",
   },
   {
     title: "서브 남주가 파업하면 생기는 일 6",
     author: "숙임",
     date: "2025년 10월 15일",
     pages: "480쪽",
-    brand: "문학수첩",
+    brand: "책책책책",
   },
   {
     title: "해리 포터와 불의 잔",
@@ -44,14 +44,14 @@ export const newBooks: Book[] = [
     translator: "강동혁",
     date: "2025년 10월 14일",
     pages: "608쪽",
-    brand: "문학수첩",
+    brand: "책책책책",
   },
   {
     title: "빛이 스미는 동안",
     author: "김경순",
     date: "2025년 9월 30일",
     pages: "232쪽",
-    brand: "문학수첩",
+    brand: "책책책책",
   },
   {
     title: "에일리언 클레이",
@@ -59,7 +59,7 @@ export const newBooks: Book[] = [
     translator: "이나경",
     date: "2025년 9월 26일",
     pages: "408쪽",
-    brand: "문학수첩",
+    brand: "책책책책",
   },
   {
     title: "시간이 흐른다는 착각",
@@ -67,7 +67,7 @@ export const newBooks: Book[] = [
     translator: "김정환",
     date: "2025년 8월 27일",
     pages: "216쪽",
-    brand: "문학수첩",
+    brand: "책책책책",
   },
 ];
 
@@ -78,7 +78,7 @@ export interface BookCategory {
 }
 
 export const bookCategories: BookCategory[] = [
-  { name: "문학수첩", icon: "📘", slug: "moonhak" },
+  { name: "책책책책", icon: "📘", slug: "moonhak" },
   { name: "북@북스", icon: "📗", slug: "books" },
   { name: "리틀북", icon: "📙", slug: "little" },
   { name: "해리포터", icon: "⚡", slug: "harry-potter" },

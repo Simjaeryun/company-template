@@ -51,11 +51,11 @@ export default function LoginPage() {
                 文
               </span>
             </div>
-            <span className="text-2xl font-bold">문학수첩</span>
+            <span className="text-2xl font-bold">책책책책</span>
           </Link>
           <h1 className="text-3xl font-bold mt-6">로그인</h1>
           <p className="text-muted-foreground mt-2">
-            문학수첩에 오신 것을 환영합니다
+            책책책책에 오신 것을 환영합니다
           </p>
         </div>
 

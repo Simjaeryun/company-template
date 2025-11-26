@@ -17,7 +17,7 @@ export default function NewsPage() {
         <div className="mb-12">
           <h1 className="text-4xl font-bold mb-4">소식</h1>
           <p className="text-lg text-muted-foreground">
-            문학수첩의 최신 소식과 공지사항을 확인하세요
+            책책책책의 최신 소식과 공지사항을 확인하세요
           </p>
         </div>
 
