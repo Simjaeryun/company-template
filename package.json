@@ -1,0 +1,22 @@
+{
+  "name": "company-template",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "admin:dev": "turbo run dev --filter=admin",
+    "user:dev": "turbo run dev --filter=user",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "turbo run check-types"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "turbo": "^2.6.1",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@10.23.0"
+}
